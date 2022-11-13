@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: 'Arial';
+        }
+        .login{
+            width: 350px;
+            overflow: hidden;
+            margin: auto;
+            margin: 20 0 0 400px;
+            padding: 70px;
+            background: cornflowerblue;
+        }
+        h2{
+            text-align: center;
+            color: black;
+            padding: 20px;
+        }
+        #Uname{
+            width: 300px;
+            height: 40px;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        #ema{
+            width: 300px;
+            height: 40px;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        #pass{
+            width: 300px;
+            height: 40px;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        #sub{
+            width: 150px;
+            height: 40px;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        span{
+            float: right;
+            color: black;
+            font-size: 18px;
+        }
+        a{
+            float: right;
+            background-color: aqua;
+        }
+        .close:hover
+        .close:focus{
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>  
+<body>
+    <h2>Login Page</h2><br>
+    <div class="login">
+        <form id="login" method="get" action="login.php">
+            <input type="text" name="Uname" id="Uname" placeholder="User Name">
+            <br><br>
+            <input type="Email" name="ema" id="ema" placeholder="Email">
+            <br><br>
+            <input type="Password" name="pass" id="pass" placeholder="Password">
+            <br><br>
+            <input type="Submit" name="sub" id="sub" placeholder="Submit">
+            <br><br>
+            <span>Waiting for Network</span>
+            <br><br>
+            Forgot <a href="#">Password</a>
+        </form>
+
+    </div>
+</body>
+</html>
